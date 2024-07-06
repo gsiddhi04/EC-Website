@@ -3,24 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EC IIT Kanpur</title>
+    <title>EC IIT Kanpur|Home</title>
+    <style>
+      body {
+        font-family: "Baloo Bhai", cursive;
+        color: lightgreen;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(46, 45, 45);
+      }
+
+      .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 30px;
+        top: 20px;
+      }
+
+      .left img {
+        height: 100px;
+        width: 100px;
+      }
+
+      .left div {
+        line-height: 8px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .mid {
+        display: block;
+        width: 40%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+      }
+
+      .right {
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+      }
+
+      .right img {
+        height: 100px;
+        width: 100px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: 22px;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+      }
+
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+      }
+
+      .intro {
+        margin: 65px;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+      .intro ul {
+        font-family: "Baloo Bhai", cursive;
+      }
+
+      .coc {
+        margin: 40px;
+        padding: 10px;
+      }
+      .title {
+        text-align: center;
+      }
+      .btn {
+        text-align: center;
+        padding: 0px;
+        margin: 30px;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      .btn button {
+        height: 40px;
+        width: 200px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        color: rgb(11, 116, 11);
+        font-size: large;
+      }
+      .para {
+        color: white;
+        padding: 10px;
+      }
+      .para ul li {
+        font-size: 1.5rem;
+      }
+      hr{
+        width: 80%;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <img src="" alt="" />
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Our Team</li>
-        <li>Contact Us</li>
-        <li>Gallery</li>
-      </ul>
+      <div class="left">
+        <img src="logo.png" alt="" />
+        <div>Election commission</div>
+      </div>
+
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <img src="iitk_logo.png" alt="" />
+      </div>
     </header>
 
-    <section>
-      <h1>ELECTION COMMISSION</h1>
-      <h2>IIT KANPUR</h2>
-      <p>
+    <section class="intro">
+      <div class="title">
+        <h1>ELECTION COMMISSION</h1>
+        <h3>IIT KANPUR</h3>
+      </div>
+      <p style="font-size: large; color: white">
         The election commission is mandated to foster the democratic spirit in
         the students’ self-governance set up - the Students’ Gymkhana. For
         upholding this spirit, it is necessary that the representatives of the
@@ -28,13 +152,64 @@
       </p>
     </section>
 
-    <section>
-        <h1>Announcements</h1>
-    </section>
+    <hr />
 
-    <section>
-        <h3>CoC</h3>
-        <h3>Know your Voting rights</h3>
+    <section class="coc">
+      <div class="title">
+        <h2>Choose Candidate Wisely!</h2>
+        <h3>Look! How important your vote is.</h3>
+      </div>
+      <div class="para">
+        <ul>
+          <li>
+            Voting in student elections allows you to influence decisions that
+            directly affect your daily life on campus, including policies on
+            housing, dining, and academic resources.
+          </li>
+
+          <li>
+            Voting gives you the power to voice your opinions and concerns on
+            issues that matter to you, ensuring that your needs and perspectives
+            are heard and addressed.
+          </li>
+
+          <li>
+            Electing strong student leaders means you have advocates who will
+            work on your behalf to improve campus life and address student
+            issues effectively.
+          </li>
+
+          <li>
+            High voter turnout demonstrates a united student body, which can
+            lead to more significant influence over university decisions and
+            policies.
+          </li>
+
+          <li>
+            Participating in the voting process helps you understand the
+            importance of leadership and governance, skills that are valuable
+            both during and after your university years.
+          </li>
+
+          <li>
+            Voting holds student leaders accountable, ensuring they fulfill
+            their promises and work diligently to represent their peers'
+            interests.
+          </li>
+        </ul>
+      </div>
     </section>
+    <hr>
+    <div class="btn">
+      <a href="Code of Conduct General Elections 24.pdf">
+        <button><b>Code of Conduct</b></button>
+      </a>
+      <a href="Schedule of General Elections 24.pdf">
+        <button><b>Schedule</b></button>
+      </a>
+    </div>
+    <footer style="background-color: black; height:30px; text-align:center; color:white;">
+      &copy;Copyright ELECTION COMMISSION, All rights reserved!
+    </footer>
   </body>
 </html>
