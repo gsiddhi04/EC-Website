@@ -12,6 +12,19 @@
         padding: 0px;
         background-color: rgb(46, 45, 45);
       }
+      body::before{
+        content: "";
+        background: url(bg.png) center center no-repeat;
+        background-size: cover;
+        background-position: center top;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 165%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.2;
+      }
 
       .left {
         display: inline-block;
@@ -76,6 +89,7 @@
         margin: 65px;
         padding: 10px;
         font-family: sans-serif;
+        animation:textAnimation 1s ease-in-out;
       }
       .intro ul {
         font-family: "Baloo Bhai", cursive;
@@ -84,6 +98,7 @@
       .coc {
         margin: 40px;
         padding: 10px;
+        animation: textAnimation2 1s ease-in-out;
       }
       .title {
         text-align: center;
@@ -115,6 +130,15 @@
       hr{
         width: 80%;
       }
+      @keyframes textAnimation {
+        0% {transform:translateX(-1000px) ;}
+        100% {transform: translateX(0px);}
+      }
+      @keyframes textAnimation2 {
+        0% {transform: translateX(1000px);}
+        100% {transform: translateX(0px);}
+      }
+        
     </style>
   </head>
   <body>
