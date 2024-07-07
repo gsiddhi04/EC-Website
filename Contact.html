@@ -4,8 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+    <script src="https://kit.fontawesome.com/970cc5a7d7.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        :root{
+            --cyan: #17a2b8;
+        }
+        body{
+            background-color: black;
+        }
+        .contact-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .contactPage-logo{
+            padding-left: 50px;
+            padding-top:30px;
+            align-items: center;
+        }
+        .useful-link{
+            color:var(--cyan);
+        }
+        .useful-link ul{
+            list-style: none;
+        }
+        .useful-link ul li a{
+            color:var(--cyan);
+        }
+        .social-links{
+            color: var(--cyan);
+        }
+        .social-links ul li a{
+            color:var(--cyan);
+        }
+        #map {
+        background-color: #202020;
+        margin: 0;
+        }
+        .text-center{
+            color: #ffffff;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #map .map-div {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+        }
+        .copyright {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 19px;
+        color: #ccc;
+        }
+    </style>
 </head>
 <body>
-   hgfd
+    
+    <div class="contactPage-logo ">
+        <a href="index.html"><img src="Stuff/logo_cropped.png" ></a>
+    </div>
+    <div  class="contact-container">
+        <div class="social-links">
+            <div>
+                <h3>Stay tuned with us on</h3>
+                <ul style="list-style: none;position: relative; left: -39px;">
+                    <li><a href="https://www.instagram.com/ec_iitk/" target="_blank"><i class="fa-solid fa-caret-right"></i> <i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/election.commission.iitk/" target="_blank"><i class="fa-solid fa-caret-right"></i> <i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="" target="_blank"><i class="fa-solid fa-caret-right"></i> <i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="" target="_blank"><i class="fa-solid fa-caret-right"></i> <i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 footer-links">
+            <div class="useful-link">
+                <h3>Useful Links</h3>
+                <ul style="position: relative; left: -39px;">
+                    <li><a href="Team.html#ourTeam" class="scroll-to"><i class="fa-solid fa-caret-right"></i> TEAM</a>
+                    </li>
+                    <li ><a href="index.html" ><i class="fa-solid fa-caret-right"></i> SCHEDULE</a></li>
+                    <li><a href="Team.html#executives" class="scroll-to"><i class="fa-solid fa-caret-right"></i>
+                            CANDIDATES</a></li>
+                    <li><a href="https://nominations.eciitk.com/" target="_blank"><i class="fa-solid fa-caret-right"></i> NOMINATION PORTAL</a></li>
+                    <li><a href="https://complaints.eciitk.com/" target="_blank"><i class="fa-solid fa-caret-right"></i> COMPLAINTS PORTAL</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact-us">
+            <h3 style="color:var(--cyan);">Contact Us</h3>
+            <p style="position: relative;color: var(--cyan);">
+                Senate Hall <br>
+                New SAC, OAT<br>
+                IIT Kanpur <br>
+                <strong style="color: var(--cyan)">Phone:</strong>
+                <a style="color: #ffffff" href="tel:+917071016690">+91 7071016690</a><br>
+                <strong style="color: var(--cyan)">Email:</strong>
+                <a style="color: #ffffff" href="mailto:ec_sg@iitk.ac.in">ec_sg@iitk.ac.in</a><br>
+            </p>
+        </div>
+    </div>
+    <section id="map">
+        <div class="container aos-init aos-animate" data-aos="slide-left">
+            <h2 class="text-center">VISIT US</h2>
+            <div class="map-div">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.4726098647498!2d80.22715541487396!3d26.504920583305005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3654ff75b5b3%3A0x318bc81e56e0da51!2sNew%20Student%20Activity%20Center%2C%20Indian%20Institute%20of%20Technology%20Kanpur%20(IIT%20Kanpur)%2C%20Kalyanpur%2C%20Kanpur%2C%20Uttar%20Pradesh%20208016!5e0!3m2!1sen!2sin!4v1592334773135!5m2!1sen!2sin" style="height: 90%; width: 100%" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copyright-container">
+        <div class="copyright">© Copyright <strong>Election Commission</strong>, All Rights Reserved</div>
+        </div>
+    </footer>
 </body>
 </html>
