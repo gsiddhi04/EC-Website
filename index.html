@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EC IIT Kanpur|Home</title>
-    <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="styling/style.css" />
     <style>
-      body::before{
+      body::before {
         content: "";
         background: url("img/bg.png") center center no-repeat;
         background-size: cover;
@@ -14,35 +14,36 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        height: 165%;
+        height: 156%;
         width: 100%;
         z-index: -1;
         opacity: 0.2;
       }
     </style>
   </head>
-  
-  <body>
 
+  <body onclick="document.removeEventListener()">
     <header>
       <div class="left">
         <img src="img/logo.png" alt="" />
         <div>Election commission</div>
       </div>
 
-      <div class="mid">
-        <ul class="navbar">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </div>
-
       <div class="right">
         <img src="img/iitk_logo.png" alt="" />
       </div>
+
+      <button id="nav-toggle" style="color: white">☰</button>
+      <nav id="nav-section" class="hidden">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="Team.html">Our Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="intro">
@@ -50,7 +51,7 @@
         <h1>ELECTION COMMISSION</h1>
         <h3>IIT KANPUR</h3>
       </div>
-      <p style="font-size: large; color: white">
+      <p style="font-size: large; color: white; text-align: center">
         The election commission is mandated to foster the democratic spirit in
         the students’ self-governance set up - the Students’ Gymkhana. For
         upholding this spirit, it is necessary that the representatives of the
@@ -106,7 +107,7 @@
       </div>
     </section>
 
-    <hr>
+    <hr />
 
     <div class="btn">
       <a href="doc/Code of Conduct General Elections 24.pdf">
@@ -116,9 +117,43 @@
         <button><b>Schedule</b></button>
       </a>
     </div>
-    
-    <footer style="background-color: black; height:30px; text-align:center; color:white;">
+
+    <footer
+      style="
+        background-color: black;
+        height: 30px;
+        text-align: center;
+        color: white;
+      "
+    >
       &copy;Copyright ELECTION COMMISSION, All rights reserved!
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var navToggle = document.getElementById("nav-toggle");
+      var navSection = document.getElementById("nav-section");
+
+      navToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        if (
+          navSection.style.display === "none" ||
+          navSection.style.display === ""
+        ) {
+          navSection.style.display = "block";
+        } else {
+          navSection.style.display = "none";
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        var isClickInside =
+          navToggle.contains(event.target) || navSection.contains(event.target);
+        if (!isClickInside) {
+          navSection.style.display = "none";
+        }
+      });
+    });
+  </script>
 </html>

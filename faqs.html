@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - University Election Commission</title>
+    <link rel="stylesheet" href="styling/faqstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>What is the University Election Commission?</h2>
+            </div>
+            <div class="answer">
+                <p>The University Election Commission is responsible for organizing and overseeing student elections, ensuring they are conducted fairly and transparently.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How often are student elections held?</h2>
+            </div>
+            <div class="answer">
+                <p>Student elections are typically held annually in the spring semester, though some universities may also hold special elections as needed.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Who is eligible to vote in student elections?</h2>
+            </div>
+            <div class="answer">
+                <p>All currently enrolled students at the university are eligible to vote in student elections.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How can I run for a position in the student government?</h2>
+            </div>
+            <div class="answer">
+                <p>To run for a position, you must complete a candidacy application form, meet the eligibility criteria, and gather a specified number of signatures from fellow students.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>What are the eligibility criteria to run for office?</h2>
+            </div>
+            <div class="answer">
+                <p>Eligibility criteria typically include being a current student in good academic standing and not being on academic probation or disciplinary action.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>When is the deadline to submit candidacy applications?</h2>
+            </div>
+            <div class="answer">
+                <p>The deadline for candidacy applications is usually announced at the beginning of the election cycle. Please check the Election Commission's announcements for specific dates.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How do I vote in the student elections?</h2>
+            </div>
+            <div class="answer">
+                <p>Voting is conducted online through the university's secure voting platform. Instructions and links to the voting platform will be provided via email.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Can I vote if I am studying abroad or on a different campus?</h2>
+            </div>
+            <div class="answer">
+                <p>Yes, you can vote online from anywhere as long as you have access to the university's voting platform and are a currently enrolled student.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>How is the voting process secured?</h2>
+            </div>
+            <div class="answer">
+                <p>The university uses a secure online voting platform with unique login credentials for each student to ensure the integrity and confidentiality of the voting process.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Are there rules for campaigning?</h2>
+            </div>
+            <div class="answer">
+                <p>Yes, there are specific rules and guidelines for campaigning to ensure fairness. These include regulations on campaign materials, social media usage, and conduct during the campaign period.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Where can I find the campaigning rules?</h2>
+            </div>
+            <div class="answer">
+                <p>The campaigning rules and guidelines are available on the University Election Commission's website under the "Campaigning" section.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Can I campaign in student residences and dining halls?</h2>
+            </div>
+            <div class="answer">
+                <p>Campaigning in certain locations like student residences and dining halls may have specific restrictions. Please refer to the campaigning guidelines for detailed information.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>When will the election results be announced?</h2>
+            </div>
+            <div class="answer">
+                <p>Election results are typically announced within 24-48 hours after the voting period ends. The results will be posted on the University Election Commission's website and shared via email.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>What should I do if I suspect any irregularities or violations during the elections?</h2>
+            </div>
+            <div class="answer">
+                <p>If you suspect any irregularities or violations, please report them to the University Election Commission immediately. All reports will be investigated thoroughly.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h2>Who should I contact for more information?</h2>
+            </div>
+            <div class="answer">
+                <p>For more information, you can contact the University Election Commission via email at [email address] or visit the office during business hours.</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button><a href="index.html"><b>Back</b></a></button>
+    </div>
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* Style for home page */
-
+/* Body styling */
 body {
   font-family: "Baloo Bhai", cursive;
   color: lightgreen;
@@ -7,97 +7,111 @@ body {
   padding: 0px;
   background-color: rgb(46, 45, 45);
 }
-body::before{
-  content: "";
-  background: url("bg.png") center center no-repeat;
-  background-size: cover;
-  background-position: center top;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 165%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.2;
+/* header styling */
+header{
+  display: flex;
+  gap: 78%;
+  height: 150px;
 }
-
+/* left logo styling */
 .left {
-  display: inline-block;
-  /* border: 2px solid red; */
-  position: absolute;
-  left: 30px;
-  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  
 }
-
 .left img {
   height: 100px;
   width: 100px;
 }
-
 .left div {
   line-height: 8px;
   font-size: 14px;
-  text-align: center;
 }
-
-.mid {
-  display: block;
-  width: 40%;
-  margin: 29px auto;
-  /* border: 2px solid green; */
-}
-
+/* right logo styling */
 .right {
-  position: absolute;
-  right: 50px;
-  top: 30px;
-  display: inline-block;
-  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .right img {
   height: 100px;
   width: 100px;
 }
-.navbar {
-  display: inline-block;
-}
-
-.navbar li {
-  display: inline-block;
-  font-size: 22px;
-}
-
-.navbar li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px;
-}
-
-.navbar li a:hover,
-.navbar li a.active {
-  text-decoration: underline;
-  color: grey;
-}
-
-.intro {
-  margin: 65px;
+/* Navbar section styling */
+#nav-toggle {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
   padding: 10px;
+  position: fixed;
+  top: 45px;
+  right: 20px;
+  z-index: 1000;
+}
+#nav-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background: #f5f5f5;
+  color: #3b3b3b;
+  text-align: center;
+  padding-top: 50px;
+}
+#nav-section ul {
+  list-style: none;
+  padding: 0;
+}
+#nav-section li {
+  margin: 20px 0;
+}
+#nav-section a {
+  color: #3b3b3b;
+  text-decoration: none;
+  font-size: 24px;
+}
+.hidden {
+  display: none;
+}
+/* intro section styling */
+.intro {
+  margin-bottom: 45px;
+  padding: 0px;
   font-family: sans-serif;
   animation:textAnimation 1s ease-in-out;
+  align-items: center;
+  justify-content: center;
 }
 .intro ul {
   font-family: "Baloo Bhai", cursive;
 }
-
-.coc {
-  margin: 40px;
-  padding: 10px;
-  animation: textAnimation2 1s ease-in-out;
-}
 .title {
   text-align: center;
 }
+/* know rights styling */
+.coc {
+  margin: 28px;
+  padding: 10px;
+  animation: textAnimation2 1s ease-in-out;
+}
+.para {
+  color: white;
+  padding: 10px;
+}
+.para ul li {
+  font-size: 1.5rem;
+}
+/* horizontal line styling */
+hr{
+  width: 80%;
+}
+/* Button styling */
 .btn {
   text-align: center;
   padding: 0px;
@@ -115,16 +129,7 @@ body::before{
   color: rgb(11, 116, 11);
   font-size: large;
 }
-.para {
-  color: white;
-  padding: 10px;
-}
-.para ul li {
-  font-size: 1.5rem;
-}
-hr{
-  width: 80%;
-}
+/* Animation */
 @keyframes textAnimation {
   0% {transform:translateX(-1000px) ;}
   100% {transform: translateX(0px);}
@@ -134,3 +139,4 @@ hr{
   100% {transform: translateX(0px);}
 }
   
+
