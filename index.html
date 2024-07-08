@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EC IIT Kanpur|Home</title>
     <link rel="stylesheet" href="styling/style.css">
+    <style>
+      body::before{
+        content: "";
+        background: url("img/bg.png") center center no-repeat;
+        background-size: cover;
+        background-position: center top;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 165%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.2;
+      }
+    </style>
   </head>
+  
   <body>
+
     <header>
       <div class="left">
         <img src="img/logo.png" alt="" />
@@ -18,7 +35,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Our Team</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
@@ -88,7 +105,9 @@
         </ul>
       </div>
     </section>
+
     <hr>
+
     <div class="btn">
       <a href="doc/Code of Conduct General Elections 24.pdf">
         <button><b>Code of Conduct</b></button>
@@ -97,6 +116,7 @@
         <button><b>Schedule</b></button>
       </a>
     </div>
+    
     <footer style="background-color: black; height:30px; text-align:center; color:white;">
       &copy;Copyright ELECTION COMMISSION, All rights reserved!
     </footer>

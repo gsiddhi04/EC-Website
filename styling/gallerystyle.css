@@ -134,7 +134,7 @@ h1{
 
 .slider-frame{
   overflow: hidden;
-  height: 800px;
+  height: 435px;
   width: 1200px;
   margin-left: 427px;
   margin-top: 20px;
@@ -226,3 +226,4 @@ box-sizing: border-box;
     unicode-bidi: isolate;
     width: 367.2px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
