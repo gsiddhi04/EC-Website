@@ -3,7 +3,8 @@
   padding: 0;
 }
 /* body{
-  background-color: rgb(191, 246, 191);
+  justify-content: center;
+  align-items: center;
 } */
 
 body::before {
@@ -101,6 +102,7 @@ header {
    margin-left: 160px;
   margin-top: 111px;
 } */
+
 
 .origin {
   box-sizing: border-box;
@@ -330,11 +332,11 @@ header {
   }
 
   .origin, .vision, .mission {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .para, .para-2, .para-3 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #nav-toggle {
