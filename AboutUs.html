@@ -1,21 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styling/aboutusstyle.css">
-</head>
-<body>
-  <section class="pic"> <img src="img/pic.jpg" alt=""></section>
-  <div class="origin">Origin of Election Commission</div>
-<p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam officia deleniti ipsum iste tempore odio rerum tempora praesentium, nam temporibus aspernatur suscipit necessitatibus facilis qui ut nihil quam quidem porro alias ab in corrupti sint. Facere vitae amet numquam sunt assumenda quidem animi aliquam voluptates, blanditiis et cum illo.</p>
-<div class="vision">Vision of Election Commission</div>
-<p class="para-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam officia deleniti ipsum iste tempore odio rerum tempora praesentium, nam temporibus aspernatur suscipit necessitatibus facilis qui ut nihil quam quidem porro alias ab in corrupti sint. Facere vitae amet numquam sunt assumenda quidem animi aliquam voluptates, blanditiis et cum illo.</p>
-<div class="mission">Mission of Election Commission</div>
-<p class="para-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam officia deleniti ipsum iste tempore odio rerum tempora praesentium, nam temporibus aspernatur suscipit necessitatibus facilis qui ut nihil quam quidem porro alias ab in corrupti sint. Facere vitae amet numquam sunt assumenda quidem animi aliquam voluptates, blanditiis et cum illo.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/aboutusstyle.css" />
+  </head>
+  <body>
+    <button id="nav-toggle" style="color: white">☰</button>
+    <nav id="nav-section" class="hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="Team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section class="pic"><img src="img/pic.jpg" alt="" /></section>
+    <div class="origin">Origin of Election Commission</div>
+    <p class="para">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam
+      officia deleniti ipsum iste tempore odio rerum tempora praesentium, nam
+      temporibus aspernatur suscipit necessitatibus facilis qui ut nihil quam
+      quidem porro alias ab in corrupti sint. Facere vitae amet numquam sunt
+      assumenda quidem animi aliquam voluptates, blanditiis et cum illo.
+    </p>
+    <div class="vision">Vision of Election Commission</div>
+    <p class="para-2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam
+      officia deleniti ipsum iste tempore odio rerum tempora praesentium, nam
+      temporibus aspernatur suscipit necessitatibus facilis qui ut nihil quam
+      quidem porro alias ab in corrupti sint. Facere vitae amet numquam sunt
+      assumenda quidem animi aliquam voluptates, blanditiis et cum illo.
+    </p>
+    <div class="mission">Mission of Election Commission</div>
+    <p class="para-3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam
+      officia deleniti ipsum iste tempore odio rerum tempora praesentium, nam
+      temporibus aspernatur suscipit necessitatibus facilis qui ut nihil quam
+      quidem porro alias ab in corrupti sint. Facere vitae amet numquam sunt
+      assumenda quidem animi aliquam voluptates, blanditiis et cum illo.
+    </p>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navToggle = document.getElementById("nav-toggle");
+        var navSection = document.getElementById("nav-section");
 
-</body>
+        navToggle.addEventListener("click", function (event) {
+          event.stopPropagation();
+          if (
+            navSection.style.display === "none" ||
+            navSection.style.display === ""
+          ) {
+            navSection.style.display = "block";
+          } else {
+            navSection.style.display = "none";
+          }
+        });
+
+        document.addEventListener("click", function (event) {
+          var isClickInside =
+            navToggle.contains(event.target) ||
+            navSection.contains(event.target);
+          if (!isClickInside) {
+            navSection.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
