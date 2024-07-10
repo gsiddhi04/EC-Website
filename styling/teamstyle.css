@@ -1,0 +1,151 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    margin: 0;
+}
+
+.team-headline{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+    margin: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.ceo-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.manager-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media(min-width:550px) {
+    .manager-box{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+.profile-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 10px;
+    box-shadow: 3px 3px 6px rgb(155, 156, 154);
+}
+.lazyload {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+.profile-content{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+}
+.social-link{
+    transform: translateY(100px);
+    transition: transform 0.8s ease;
+    display: flex;
+
+    align-items: center;
+    gap: 20px;
+}
+.social-link i{
+    color: rgb(109, 113, 113);
+    font-size:xx-large;
+}
+.social-link i:hover{
+    color: rgb(194, 194, 189);
+}
+.profile-card:hover .lazyload {
+    opacity: 0.3;
+}
+.profile-card:hover .profile-content {
+    opacity: 1;
+}
+.profile-card:hover .social-link {
+    transform: translateY(0);
+}
+.profile-content ul li{
+    list-style: none;
+}
+.profile-img{
+   width: 10px;
+   
+}
+.line-height-1{
+    color: rgb(176, 172, 169);
+    text-align: center;
+    font-size: larger;
+    font-weight:900;
+    margin-bottom: 0;
+}
+.line-height-2{
+    color: rgb(121, 119, 117);
+    text-align: center;
+    font-size: larger;
+    font-weight:lighter;
+    margin-top: 5px;
+}
+.executives-headline{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+    margin: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.executives-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+@media(min-width:550px) {
+    .executives{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+.domain-info{
+    font-size:xx-large;
+    position:relative;
+    text-align: center;
+    color:rgb(109, 113, 113);
+    align-items: center;
+}
+.senator-headline{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+    margin: 30px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.senator-page-link{
+    color: rgb(176, 172, 169);
+    text-align: center;
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
