@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="styling/gallerystyle.css" />
-  </head>
-  <body>
-    <button id="nav-toggle" style="color: white">☰</button>
+    <link rel="stylesheet" href="styling/gallerystyle.css">
+</head>
+<body onclick="document.removeEventListener()">
+  <header>
+    <div class="left">
+      <img src="img/logo.png" alt="">
+      <div>Election commission</div>
+    </div>
+
+    <div class="right">
+      <img src="img/iitk_logo.png" alt="">
+    </div>
+
+    <button id="nav-toggle" style="color: rgb(65, 231, 70)">☰</button>
     <nav id="nav-section" class="hidden">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,126 +29,51 @@
         <li><a href="Contact.html">Contact Us</a></li>
       </ul>
     </nav>
-
+  </header>
     <div class="container">
-      <div class="left-text">
-        <h2 class="heading">Gallery</h2>
-        <p class="subheading">
-          Upholding democracy with integrity, the Election Commission ensures
-          free, fair, and transparent elections for a stronger nation.
-        </p>
-      </div>
-      <div class="gallery" id="gallery">
-        <div
-          class="box row-2"
-          id="box-1"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-          "
-        >
-          Waterfalls
+        <div class="left-text">
+            <h2 class="heading">Gallery</h2>
+            <p class="subheading">Upholding democracy with integrity, the Election Commission ensures free, fair, and transparent elections for a stronger nation.</p>
         </div>
-        <div
-          class="box col-2"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80);
-          "
-        >
-          Hills
+        <div class="gallery" id="gallery">
+            <div class="box row-2" id="box-1" style="background-image: url(img/EC\ room.jpg);"></div>
+            <div class="box col-2" style="background-image: url(img/OAT.png);"></div>
+            <div class="box" style="background-image: url(img/OAT\ 2.png);"></div>
+            <div class="box row-2" style="background-image: url(img/After\ 2.jpg);"></div>
+            <div class="box col-2" style="background-image: url(img/AFter.jpg);"></div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);"></div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80);"></div>
         </div>
-        <div
-          class="box"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1497449493050-aad1e7cad165?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80);
-          "
-        >
-          Ocean
-        </div>
-        <div
-          class="box row-2"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
-          "
-        >
-          Rain
-        </div>
-        <div
-          class="box col-2"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-          "
-        >
-          Mountains
-        </div>
-        <div
-          class="box"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
-          "
-        >
-          Trees
-        </div>
-        <div
-          class="box col-2"
-          style="
-            background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80);
-          "
-        >
-          Beach
-        </div>
-      </div>
     </div>
-    <!-- <h1 class="suc">Celebrating success</h1>
-    <div class="slider-frame">
-      <div class="slide-images">
-        <div class="img-container">
-          <img src="img/Slid.webp" />
-        </div>
-        <div class="img-container">
-          <img src="img/Slid.webp" />
-        </div>
-        <div class="img-container">
-          <img src="img/Slid.webp" />
-        </div>
-      </div>
-    </div> -->
-    <footer
-      style="
-        background-color: black;
-        height: 30px;
-        text-align: center;
-        color: white;
-      "
-    >
-      &copy;Copyright ELECTION COMMISSION, All rights reserved!
+
+    <footer style="background-color: black; height:30px; text-align:center; color:white;">
+            &copy;Copyright ELECTION COMMISSION, All rights reserved!
     </footer>
-
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var navToggle = document.getElementById("nav-toggle");
-        var navSection = document.getElementById("nav-section");
-
-        navToggle.addEventListener("click", function (event) {
-          event.stopPropagation();
-          if (
-            navSection.style.display === "none" ||
-            navSection.style.display === ""
-          ) {
-            navSection.style.display = "block";
-          } else {
-            navSection.style.display = "none";
-          }
+        document.addEventListener("DOMContentLoaded", function () {
+          var navToggle = document.getElementById("nav-toggle");
+          var navSection = document.getElementById("nav-section");
+    
+          navToggle.addEventListener("click", function (event) {
+            event.stopPropagation();
+            if (
+              navSection.style.display === "none" ||
+              navSection.style.display === ""
+            ) {
+              navSection.style.display = "block";
+            } else {
+              navSection.style.display = "none";
+            }
+          });
+    
+          document.addEventListener("click", function (event) {
+            var isClickInside =
+              navToggle.contains(event.target) || navSection.contains(event.target);
+            if (!isClickInside) {
+              navSection.style.display = "none";
+            }
+          });
         });
-
-        document.addEventListener("click", function (event) {
-          var isClickInside =
-            navToggle.contains(event.target) ||
-            navSection.contains(event.target);
-          if (!isClickInside) {
-            navSection.style.display = "none";
-          }
-        });
-      });
-    </script>
-  </body>
+      </script>
+</body>
 </html>
