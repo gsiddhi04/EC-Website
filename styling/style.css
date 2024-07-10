@@ -1,7 +1,10 @@
 /* Style for home page */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 /* Body styling */
 body {
-  font-family: "Baloo Bhai", cursive;
+  font-family: "Mukta", sans-serif;
   color: lightgreen;
   margin: 0px;
   padding: 0px;
