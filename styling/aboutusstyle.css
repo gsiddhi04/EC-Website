@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ body::before {
   width: 100%;
   z-index: -1;
   opacity: 0.2;
+  font-family: "Mukta", sans-serif;
 }
 
 /* header styling */
@@ -109,7 +111,7 @@ header {
   color: rgb(0, 40, 0);
   color-scheme: light;
   display: block;
-  font-family: "Mukta", sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-size: 54px;
   font-variation-settings: normal;
@@ -141,7 +143,7 @@ header {
   color: rgb(0, 20, 0);
   color-scheme: light;
   display: block;
-  font-family: Poppins, sans-serif;
+  font-family: "Mukta", sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-size: 19px;
   font-variation-settings: normal;
@@ -168,7 +170,7 @@ header {
   /* rgb(189, 159, 103); */
   color-scheme: light;
   display: block;
-  font-family: "Mukta", sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-size: 54px;
   font-variation-settings: normal;
@@ -199,7 +201,8 @@ header {
   color: rgb(0, 30, 0);
   color-scheme: light;
   display: block;
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
+  font-family: "Mukta", sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-size: 19px;
   font-variation-settings: normal;
@@ -225,7 +228,7 @@ header {
   color: rgb(0, 40, 0);
   color-scheme: light;
   display: block;
-  font-family: "Mukta", sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-size: 54px;
   font-variation-settings: normal;
@@ -256,7 +259,8 @@ header {
   color: rgb(0, 30, 0);
   color-scheme: light;
   display: block;
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
+  font-family: "Mukta", sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-size: 19px;
   font-variation-settings: normal;
