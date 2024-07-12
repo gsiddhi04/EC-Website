@@ -246,7 +246,7 @@ h3{
 
 /* Media query for screens larger than 768px */
 @media (min-width: 428px) {
-  #nav-section {
+  /* #nav-section {
       display: block;
       position: fixed;
       top: 0;
@@ -257,8 +257,8 @@ h3{
       color: #3b3b3b;
       text-align: center;
       padding-top: 50px;
-      z-index: 1000; /* Ensure the nav menu is above other content */
-  }
+      z-index: 1000;  Ensure the nav menu is above other content 
+  } */
   #nav-section ul {
       list-style: none;
       padding: 0;
