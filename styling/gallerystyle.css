@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Bodoni Moda', serif;
+    font-family: "Mukta", sans-serif;
     font-size: 1.2rem;
 
 }
