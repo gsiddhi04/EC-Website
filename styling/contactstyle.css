@@ -225,9 +225,6 @@ body {
 
 /* Media query for screens larger than 768px */
 @media (min-width: 428px) {
-  #nav-toggle {
-      display: none;
-  }
   #nav-section {
       display: block;
       position: fixed;
@@ -256,6 +253,6 @@ body {
       padding: 10px;
   }
   .hidden {
-      display: block !important;
+      display: block ;
   }
 }

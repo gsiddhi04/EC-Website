@@ -10,8 +10,9 @@
     ></script>
     <link rel="stylesheet" href="styling/contactstyle.css" />
   </head>
-  <body>
-    <button id="nav-toggle" style="color: white">☰</button>
+  <body onclick="document.removeEventListener()">
+    
+    <button id="nav-toggle" style="color: green">☰</button>
     <nav id="nav-section" class="hidden">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -139,7 +140,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         var navToggle = document.getElementById("nav-toggle");
         var navSection = document.getElementById("nav-section");
-
+  
         navToggle.addEventListener("click", function (event) {
           event.stopPropagation();
           if (
@@ -151,11 +152,10 @@
             navSection.style.display = "none";
           }
         });
-
+  
         document.addEventListener("click", function (event) {
           var isClickInside =
-            navToggle.contains(event.target) ||
-            navSection.contains(event.target);
+            navToggle.contains(event.target) || navSection.contains(event.target);
           if (!isClickInside) {
             navSection.style.display = "none";
           }
