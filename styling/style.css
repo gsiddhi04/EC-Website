@@ -86,7 +86,8 @@ header{
 .intro {
   margin-bottom: 45px;
   padding: 0px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family:Georgia, 'Times New Roman', Times, serif;
   animation:textAnimation 1s ease-in-out;
   align-items: center;
   justify-content: center;
@@ -96,6 +97,7 @@ header{
 }
 .title {
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 /* know rights styling */
 .coc {
@@ -131,6 +133,10 @@ hr{
   border-radius: 5px;
   color: rgb(11, 116, 11);
   font-size: large;
+}
+.btn button:hover{
+  color: rgb(7, 252, 89);
+  cursor: pointer;
 }
 /* Animation */
 @keyframes textAnimation {

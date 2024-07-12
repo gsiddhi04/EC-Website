@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 * {
   text-decoration: none;
 }
 :root {
   --cyan: #e0ffff;
+  --green:rgb(11, 169, 11);
 }
 body {
   background-color: black;
@@ -11,6 +13,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.social-links ul li a:hover{
+  color:rgb(11, 169, 11);  
 }
 .contactPage-logo {
   padding-left: 50px;
@@ -29,11 +34,27 @@ body {
 .useful-link ul li a {
   color: var(--cyan);
 }
+.useful-link ul li{
+  margin-bottom:3px;
+}
+.useful-link ul li a:hover{
+  color:rgb(11, 169, 11);
+}
 .social-links {
   color: var(--cyan);
+  font-family: "Mukta", sans-serif;
+}
+h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .social-links ul li a {
   color: var(--cyan);
+}
+.contact-us p{
+  font-family: "Mukta", sans-serif;
+}
+.contact-link:hover{
+  color:rgb(11, 169, 11);
 }
 #map {
   background-color: #202020;
@@ -56,7 +77,7 @@ body {
   font-size: 19px;
   color: #ccc;
 }
-
+/* navigation bar */
 #nav-toggle {
   font-size: 30px;
   cursor: pointer;
